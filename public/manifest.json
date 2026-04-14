@@ -1,6 +1,6 @@
 {
   "name": "Bridgeport Navigator",
-  "short_name": "NH Navigator",
+  "short_name": "BPT Navigator",
   "description": "Find social services, benefits, and resources in Bridgeport, CT",
   "start_url": "/",
   "display": "standalone",

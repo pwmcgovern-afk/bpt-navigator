@@ -1,11 +1,13 @@
 import { PrismaClient } from '@prisma/client'
 import { coreResources, categorySeeds } from './data-core'
+import { expansionResources } from './data-expansion'
 
 const prisma = new PrismaClient()
 
 // All resources combined from all data sources
 const allResources = [
   ...coreResources,
+  ...expansionResources,
 ]
 
 async function main() {
