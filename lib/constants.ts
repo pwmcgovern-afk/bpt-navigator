@@ -25,6 +25,13 @@ export function calculatePctFPL(annualIncome: number, householdSize: number): nu
   return Math.round((annualIncome / fpl) * 100)
 }
 
+// Cities this Navigator instance shows resources for. Used to filter all
+// listing queries (homepage count, /resources, /category, /results, sitemap,
+// chat search) so a Bridgeport user never sees Hartford-only content.
+// Detail pages (/resources/[id]) are NOT filtered — direct ID links should
+// always resolve so SMS/share links keep working across instances.
+export const SERVED_CITIES = ['Bridgeport'] as const
+
 // Categories
 export const CATEGORIES = [
   { slug: 'housing', name: 'Housing', icon: '🏠' },
