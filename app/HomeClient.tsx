@@ -66,8 +66,12 @@ export default function Home({ resourceCount }: { resourceCount: number }) {
             <p className="hero__lede">{t.heroSub}</p>
           </div>
           <div className="hero__mark" aria-hidden="true">
+            {/* Colophon stamp — parchment-deep circle with hairline border
+                holds the city SVG. Same position across all 3 forks so the
+                family reads as a publication series. */}
+            <div className="hero__stamp">
             {/* Lighthouse — Penfield Reef / Pleasure Beach. Fills use currentColor
-                so .hero__mark tints the whole thing with Bridgeport blue. */}
+                so the stamp tints the whole thing with Bridgeport blue. */}
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20" cy="8" r="2.5" fill="currentColor" />
               <rect x="15.5" y="9.5" width="9" height="3" rx="0.5" fill="currentColor" />
@@ -77,6 +81,7 @@ export default function Home({ resourceCount }: { resourceCount: number }) {
               <rect x="11" y="31" width="18" height="3" rx="1" fill="currentColor" />
               <path d="M8 36 Q12 34 16 36 T24 36 T32 36" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" opacity="0.7" />
             </svg>
+            </div>
           </div>
         </div>
 
